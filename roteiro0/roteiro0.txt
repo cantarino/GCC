@@ -1,0 +1,5 @@
+faltam
+RECUPERA - SPOJ-BR
+NUMEROMG - SPOJ-BR
+PAPRIMAS - SPOJ-BR //nao aceita solucao	
+OBIHANOI SPOJ-BR // nao aceita nenhuma solucao	
