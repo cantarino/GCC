@@ -1,25 +1,16 @@
 #include <stdio.h>
 
-int fibonacci(int a){
-	int i,aux1,t;
-	if(a==1){
-		return 0;
-	}
-	if(a==2){
-		return 1;
-	}
-	t=0;
-	aux1=1;
-	for(i=0;i<a-1;i++){
-		t+=aux1;
-		aux1=t;
-		//printf("%d",t);
-	}
-	return t;
-}
-
 int main(){
-	int a;
-	scanf("%d",&a);
-	printf("%d\n",fibonacci(a));
+	long int a,i;
+	long int fib[46];
+	fib[0] = 0;
+	fib[1] = 1;
+	scanf("%ld",&a);
+	for(i=0;i<a-1;i++){
+		printf("%ld ",fib[i]);
+		if(i>0)
+			fib[i+1] = fib[i] + fib[i-1];
+	}
+	printf("%ld",fib[i]);
+	printf("\n");
 }
